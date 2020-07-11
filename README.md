@@ -1,6 +1,15 @@
-# Yashgajera
+<h1 align="center">
+  Yash Gajera 
+</h1>
+
+
+## Info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+
+## Dependency 
+
+Run `npm install` to download required modules.
 
 ## Development server
 
