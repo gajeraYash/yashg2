@@ -29,8 +29,8 @@
               "src/styles.css"
             ],
             "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/typed.js/lib/typed.min.js",
               "node_modules/waypoints/lib/jquery.waypoints.min.js"
             ]
           },
