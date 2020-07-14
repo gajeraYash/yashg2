@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
+import { SelfintroComponent } from './selfintro/selfintro.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SelfintroComponent
   ],
   imports: [
     BrowserModule,

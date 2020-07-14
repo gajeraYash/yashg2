@@ -1,25 +1,6 @@
-#selfinfo {
-  width: 100%;
-  height: 100vh;
-  background-color: #092532;
-  background-size: cover;
-  position: relative;
+.navbar{
+  padding: 20px 5% 0 5%;
 }
-#selfinfo h1 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #89c9b8;
-}
-
-#selfinfo p {
-  color: #89c9b8;
-  margin: 15px 0 0 0;
-  font-size: 26px;
-}
-
-#selfinfo p span {
-  color: #e1ffc2;
-  letter-spacing: 1px;
+.navbar-nav {
+  margin-left: auto;
 }
