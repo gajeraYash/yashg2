@@ -1,0 +1,24 @@
+#selfinfo {
+  width: 100%;
+  height: 100vh;
+  background-color: #092532;
+  background-size: cover;
+}
+#selfinfo h1 {
+  margin: 0;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #e4e3e3;
+}
+
+#selfinfo p {
+  color: #84a9ac;
+  margin: 15px 0 0 0;
+  font-size: 35px;
+}
+
+#selfinfo p span {
+  color: #e1ffc2;
+  letter-spacing: 1px;
+}
