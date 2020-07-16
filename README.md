@@ -2,7 +2,13 @@
   Yash Gajera 
 </h1>
 
-
+<div align='center'>
+<img style='padding:0 5px 0 5px' src='https://travis-ci.com/gajeraYash/yashg2.svg?branch=master'> 
+<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/url-yashgajera.io-blue'>
+<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/status-down-red'>
+<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/release-15AUG-blue'>
+<div>
+  
 ## Info
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
