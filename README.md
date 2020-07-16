@@ -7,7 +7,7 @@
 <img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/url-yashgajera.io-blue'>
 <img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/status-down-red'>
 <img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/release-15AUG-blue'>
-<div>
+</div>
   
 ## Info
 
