@@ -1,6 +1,7 @@
+/* Intro */
 #selfinfo {
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   background-color: #092532;
   background-size: cover;
 }
@@ -21,4 +22,22 @@
 #selfinfo p span {
   color: #e1ffc2;
   letter-spacing: 1px;
+}
+
+/* Social Icons */
+#selfinfo .social-links {
+  margin-top: 20px;
+}
+
+#selfinfo .social-links a {
+  font-size: 28px;
+  display: inline-block;
+  color: #45505b;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#selfinfo .social-links a:hover {
+  color: #e1ffc2;
 }
