@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgxTypedJsModule } from 'ngx-typed-js';
-
+import * as AOS from 'aos';
 @Component({
   selector: 'app-selfintro',
   templateUrl: './selfintro.component.html',
@@ -11,6 +11,7 @@ export class SelfintroComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init()
   }
 
 }
