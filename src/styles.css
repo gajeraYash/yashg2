@@ -5,3 +5,13 @@
 @import "~aos/dist/aos.css";
 /* https://colorhunt.co/palette/196240 */
 /* https://colorhunt.co/palette/191933 */
+
+:root {
+  --main-primary-color: #64ffda;
+  --main-secondary-color: #dceff9;
+  --main-sub-color: #828B8F;
+  --main-other-color: #05b2dc;
+  --main-bg-color: #092532;
+
+  --hover-primary-bg-color: #64ffda33; /*20% Opacity*/
+}
