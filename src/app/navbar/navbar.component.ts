@@ -11,46 +11,33 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.navbar').outerHeight();
+    if ($('.navbar').length > 0) { // check if element exists
+      var last_scroll_top = 0;
+      var delta = 0;
 
-    console.log("navbarHeight",navbarHeight);
-    $(window).scroll(function (event) {
-      didScroll = true;
-    });
+      $(window).on('scroll', function() {
+          var scroll_top = $(this).scrollTop();
+          console.log("scroll Value",$(this).scrollTop());
+          if(scroll_top > 0 && scroll_top < 20){
+            console.log("Condition 1");
+            $('.navbar').removeClass("nav-init");
+          }else if(scroll_top > 20 && scroll_top < 200 ){
+            console.log("Condition 2");
+            $('.navbar').addClass('nav-init');
+          }else if (scroll_top < last_scroll_top){
+            $('.navbar').removeClass('nav-down').addClass([ "nav-up", "nav-init"]);
+            if(scroll_top == 0){
+              $('.navbar').removeClass("nav-init");
+            }
+          }else{
+            console.log("Condition 4");
+            $('.navbar').removeClass([ "nav-up", "nav-init"]).addClass("nav-down");
+          }
+          last_scroll_top = scroll_top;
+      });
+  }
 
-    setInterval(function () {
-      if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-      }
-    }, 250);
 
-    function hasScrolled() {
-      var st = $(this).scrollTop();
-
-      // Make sure they scroll more than delta
-      if (Math.abs(lastScrollTop - st) <= delta) return;
-
-      // If they scrolled down and are past the navbar, add class .nav-up.
-      // This is necessary so you never see what is "behind" the navbar.
-      console.log("st",st);
-      console.log("lastScrollTop",lastScrollTop);
-      console.log("navbarHeight",navbarHeight);
-      if (st > lastScrollTop && st > navbarHeight) {
-        // Scroll Down
-        $('.navbar').removeClass('nav-down').addClass('nav-up');
-      } else {
-        // Scroll Up
-        if (st + $(window).height() < $(document).height()) {
-          $('.navbar').removeClass('nav-up').addClass('nav-down');
-        }
-      }
-
-      lastScrollTop = st;
-    }
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')

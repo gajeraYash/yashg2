@@ -1,7 +1,7 @@
 
 .navbar{
   padding: 20px 5% 20px 5%;
-  background-color:darkgrey/*var(--main-bg-color)*/;
+  background-color: var(--main-bg-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,10 +11,17 @@
   margin-left: auto;
 }
 .nav-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  transform:translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
 .nav-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+  transform:translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+.nav-init{
+  padding: 10px 5% 10px 5%;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  transition: all 0.5s ease-in-out;
 }
 ul.navbar-nav li.nav-item a.nav-link{
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
