@@ -1,10 +1,21 @@
+
 .navbar{
   padding: 20px 5% 20px 5%;
+  background-color:darkgrey/*var(--main-bg-color)*/;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 .navbar-nav {
   margin-left: auto;
 }
-
+.nav-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.nav-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
 ul.navbar-nav li.nav-item a.nav-link{
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
