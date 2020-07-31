@@ -52,5 +52,5 @@
   transform: scale(1.05);
 }
 .textDescription{
-  color: #e1ffc2;
+  color: var(--main-sub-color);
 }
