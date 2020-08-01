@@ -20,7 +20,7 @@
 }
 .nav-init{
   padding: 10px 5% 10px 5%;
-  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+  box-shadow: var(--shade-bg-color) 0px 10px 30px -10px;
   transition: all 0.5s ease-in-out;
 }
 ul.navbar-nav li.nav-item a.nav-link{
