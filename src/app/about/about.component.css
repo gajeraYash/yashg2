@@ -4,6 +4,7 @@
   background-color: var(--main-bg-color);
   background-size: cover;
   padding-top:50px;
+  padding-bottom:50px;
 }
 .section {
   overflow: hidden;
