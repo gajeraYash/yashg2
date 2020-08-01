@@ -6,13 +6,15 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { SelfintroComponent } from './selfintro/selfintro.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SelfintroComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
