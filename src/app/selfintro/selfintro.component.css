@@ -25,11 +25,11 @@
 }
 
 /* Social Icons */
-#selfinfo .social-links {
+#selfinfo .social {
   margin-top: 20px;
 }
 
-#selfinfo .social-links a {
+#selfinfo .social a {
   font-size: 28px;
   display: inline-block;
   color: var(--main-sub-color);
@@ -38,6 +38,6 @@
   transition: 0.3s;
 }
 
-#selfinfo .social-links a:hover {
+#selfinfo .social a:hover {
   color: var(--main-primary-color);
 }
