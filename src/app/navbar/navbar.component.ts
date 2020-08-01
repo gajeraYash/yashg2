@@ -17,18 +17,22 @@ export class NavbarComponent implements OnInit {
 
       $(window).on('scroll', function() {
           var scroll_top = $(this).scrollTop();
+          var heightTopID = document.getElementById('selfinfo').getBoundingClientRect().height;
           console.log("scroll Value",$(this).scrollTop());
-          if(scroll_top > 0 && scroll_top < 20){
+          console.log("Client Height",heightTopID);
+          if(scroll_top == 0){
             console.log("Condition 1");
             $('.navbar').removeClass("nav-init");
-          }else if(scroll_top > 20 && scroll_top < 200 ){
+          }else if(scroll_top > 0 && scroll_top < (heightTopID * 0.25)){
             console.log("Condition 2");
             $('.navbar').addClass('nav-init');
           }else if (scroll_top < last_scroll_top){
+            console.log("Condition 3");
+
             $('.navbar').removeClass('nav-down').addClass([ "nav-up", "nav-init"]);
-            if(scroll_top == 0){
-              $('.navbar').removeClass("nav-init");
-            }
+            //if(scroll_top == 0){
+             // $('.navbar').removeClass("nav-init");
+            //}
           }else{
             console.log("Condition 4");
             $('.navbar').removeClass([ "nav-up", "nav-init"]).addClass("nav-down");
@@ -69,7 +73,7 @@ export class NavbarComponent implements OnInit {
       });
     var waypoint = new Waypoint({
       element: document.getElementById('about'),
-      handler: function (direction) {
+      handler: function (scroll) {
         console.log('Scrolled to waypoint!');
       },
     });
