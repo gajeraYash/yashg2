@@ -6,9 +6,9 @@
   padding-top:50px;
 }
 
-.section {
+/* .section {
   overflow: hidden;
-}
+} */
 
 .section-title {
   text-align: center;
@@ -24,6 +24,22 @@
   color: var(--main-secondary-color);
 }
 
-.container nav{
-  width: fit-content;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--main-primary-color);
+  background-color: var(--main-bg-color);
+  border-left:solid var(--main-primary-color);
+}
+.nav-link {
+  border-radius: 0;
+  color: var(--main-sub-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-left:solid 2px var(--main-sub-color);
+  font-size: large;
+}
+.nav-link:hover{
+  border-radius: 0;
+  color: var(--main-sub-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-left:solid 2px var(--main-sub-color);
+  background-color: var(--hover-primary-bg-color);
 }
