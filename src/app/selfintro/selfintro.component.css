@@ -1,7 +1,8 @@
 /* Intro */
 #selfinfo {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
   background-color: var(--main-bg-color);
   background-size: cover;
 }
@@ -40,4 +41,19 @@
 
 #selfinfo .social a:hover {
   color: var(--main-primary-color);
+}
+
+@media (max-width: 992px) {
+  #selfinfo {
+    text-align: center;
+  }
+  #selfinfo h1 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  #selfinfo p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
