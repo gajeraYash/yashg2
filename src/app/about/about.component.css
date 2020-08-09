@@ -23,10 +23,26 @@
   position: relative;
   color: var(--main-secondary-color);
 }
+.profile{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: flex-start;
+}
 
+pictureBox{
+  position: relative;
+  width: 40%;
+  max-width: 300px;
+  margin-right: 60px;
+}
+
+
+/*
 .profileBox{
-  height: 300px;
-  width: 300px;
+  width: 30%;
+  max-width: 300px;
   background-image: url("../../assets/img/profile-bw.jpeg") ;
   background-size: cover;
   background-position: center center;
@@ -51,20 +67,24 @@
 .profileBox:hover{
   background-image: url("../../assets/img/profile.jpeg") ;
   transform: scale(1.05);
-}
+}*/
+
+
 .textDescription{
   color: var(--main-sub-color);
   font-size: 18px;
   font-weight: 600;
+  width: 70%;
 }
 
-.contanier .row .col-5{
+.container .row .col-5{
   padding:0px;
 }
 
 .tech-list{
 padding: 0px;
 }
+
 .tech-list::before{
   content: "○";
   padding-right: 10px;
