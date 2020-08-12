@@ -19,14 +19,13 @@ export class NavbarComponent implements OnInit {
           var scroll_top = $(this).scrollTop();
           var heightTopID = document.getElementById('selfinfo').getBoundingClientRect().height;
           console.log("Client Height",heightTopID);
-          if(scroll_top == 0){
+          if(scroll_top <= 5){
             $('.navbar').removeClass("nav-init");
-          }else if(scroll_top > 0 && scroll_top < (heightTopID * 0.25)){
+          }else if(scroll_top > 5 && scroll_top < (heightTopID * 0.25)){
             $('.navbar').addClass('nav-init');
           }else if (scroll_top < last_scroll_top){
             $('.navbar').removeClass('nav-down').addClass([ "nav-up", "nav-init"]);
           }else{
-            console.log("Condition 4");
             $('.navbar').removeClass([ "nav-up", "nav-init"]).addClass("nav-down");
           }
           last_scroll_top = scroll_top;
