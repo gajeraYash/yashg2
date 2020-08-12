@@ -43,7 +43,7 @@
   color: var(--main-primary-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   #selfinfo {
     text-align: center;
   }
@@ -57,3 +57,4 @@
     line-height: 24px;
   }
 }
+
