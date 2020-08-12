@@ -16,3 +16,14 @@
   --hover-primary-bg-color: #64ffda33; /*20% Opacity*/
   --shade-bg-color: #030D11;
 }
+html {
+  background-color: var(--main-bg-color);
+}
+html:before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  z-index: -1;
+}
