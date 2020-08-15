@@ -3,7 +3,7 @@
   background-color: var(--main-bg-color);
   background-size: cover;
   padding-top:50px;
-  padding-bottom:50px;
+  padding-bottom:150px;
 }
 .section {
   overflow: hidden;
@@ -22,6 +22,11 @@
   margin-bottom: 20px;
   position: relative;
   color: var(--main-secondary-color);
+}
+
+#profilePicture{
+  width: 80%;
+  height: auto;
 }
 /*
 .colorOverlay{
@@ -45,7 +50,7 @@
 
 .textDescription{
   color: var(--main-sub-color);
-  font-size: medium;
+  font-size: large;
 }
 
 
@@ -68,4 +73,10 @@ ul{
 }
 .link{
   color: var(--main-other-color);
+}
+
+@media (max-width: 767px) {
+  #about{
+    padding-bottom: 50px;
+  }
 }
