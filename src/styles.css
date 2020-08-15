@@ -15,6 +15,7 @@
 
   --hover-primary-bg-color: #64ffda33; /*20% Opacity*/
   --shade-bg-color: #030D11;
+  --pop-bg-color: #061A22;
 }
 html {
   background-color: var(--main-bg-color);
