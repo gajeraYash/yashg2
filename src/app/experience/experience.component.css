@@ -1,9 +1,9 @@
 #experience {
   width: 100%;
-  min-height: 100vh;
   background-color: var(--main-bg-color);
   background-size: cover;
   padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 .section-title {
