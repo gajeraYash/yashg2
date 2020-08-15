@@ -6,19 +6,6 @@
   padding-bottom: 200px;
 }
 
-.section-title {
-  text-align: center;
-}
-
-.section-title h2 {
-  font-size: 44px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  color: var(--main-secondary-color);
-}
 
 .nav {
   display: inline;
@@ -86,7 +73,8 @@
   position: absolute;
   left: 0px;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   #tab-menu {
     display: flex;
     -webkit-justify-content: center;

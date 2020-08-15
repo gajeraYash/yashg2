@@ -17,9 +17,11 @@
   --shade-bg-color: #030D11;
   --pop-bg-color: #061A22;
 }
+
 html {
   background-color: var(--main-bg-color);
 }
+
 html:before {
   content: '';
   position: fixed;
@@ -27,4 +29,18 @@ html:before {
   height: 100%;
   background-color: var(--main-bg-color);
   z-index: -1;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--main-secondary-color);
 }
