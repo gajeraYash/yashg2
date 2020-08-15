@@ -1,0 +1,26 @@
+#projects{
+  width: 100%;
+  background-color: var(--main-bg-color);
+  background-size: cover;
+  padding-top:50px;
+  padding-bottom:600px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  color: var(--main-secondary-color);
+}
+
+.box{
+  background-color: var(--pop-bg-color);
+  padding: 140px 0px;
+}
