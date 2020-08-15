@@ -1,5 +1,4 @@
-
-.navbar{
+.navbar {
   padding: 20px 5% 20px 5%;
   background-color: var(--main-bg-color);
   position: fixed;
@@ -10,38 +9,38 @@
 .navbar-nav {
   margin-left: auto;
 }
-.nav-down{
-  transform:translateY(-100%);
+.nav-down {
+  transform: translateY(-100%);
   transition: all 0.3s ease-in-out;
 }
-.nav-up{
-  transform:translateY(0);
+.nav-up {
+  transform: translateY(0);
   transition: all 0.3s ease-in-out;
 }
-.nav-init{
+.nav-init {
   padding: 10px 5% 10px 5%;
-  box-shadow: var(--shade-bg-color) 0px 10px 30px -10px;
+  -webkit-box-shadow: 0px 10px 10px -2px rgba(3, 13, 17, 0.75);
+  -moz-box-shadow: 0px 10px 10px -2px rgba(3, 13, 17, 0.75);
+  box-shadow: 0px 10px 10px -2px rgba(3, 13, 17, 0.75);
   transition: all 0.5s ease-in-out;
 }
-ul.navbar-nav li.nav-item a.nav-link{
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+ul.navbar-nav li.nav-item a.nav-link {
+  transition: all 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67) 0s;
 }
 
-ul.navbar-nav li.nav-item a.nav-link:hover{
+ul.navbar-nav li.nav-item a.nav-link:hover {
   color: var(--main-primary-color);
 }
-#resume{
+#resume {
   margin: 0px 10px 0 10px;
   color: var(--main-primary-color);
   line-height: 1;
   border-width: 1px;
   border-style: solid;
   border-color: var(--main-primary-color);
-  padding: 0.70rem 1rem;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 0.7rem 1rem;
+  transition: all 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67) 0s;
 }
-#resume:hover{
+#resume:hover {
   background-color: var(--hover-primary-bg-color);
 }
-
-
