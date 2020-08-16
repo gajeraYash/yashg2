@@ -6,21 +6,61 @@
   padding-bottom:600px;
 }
 
-.section-title {
-  text-align: center;
-}
-
-.section-title h2 {
-  font-size: 44px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  color: var(--main-secondary-color);
-}
-
 .box{
   background-color: var(--pop-bg-color);
-  padding: 140px 0px;
+  height: 200px;
+  width: 100%;
+  display: inline-block;
 }
+.box-title{
+  padding: 15px 20px 0px 20px;
+  color: var(--main-secondary-color);
+  font-size: large;
+}
+.box-desc{
+  padding: 10px 20px 0px 20px;
+  height: 100px;
+  width: 100%;
+  color: var(--main-sub-color);
+  font-size: medium;
+}
+.box-foot{
+  padding: 10px 20px 0px 20px;
+  margin:0px;
+  font: medium;
+}
+
+.box-sub{
+  color: var(--main-sub-color);
+  font-family: "Lucida Console", Courier, monospace;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+.box-sub li{
+  margin: 5px;
+}
+.box-icon{
+  text-align: right;
+  color: var(--main-sub-color);
+  margin: 0px;
+  padding: 0px;
+}
+.proj-icon{
+  color: var(--main-sub-color);
+  font-size: x-large;
+}
+
+.proj-icon:hover{
+  color: var(--main-primary-color);
+}
+
+[class*="col-"] {
+      margin-bottom: 25px;
+}
+
+/* @media (max-width: 768px) {
+
+
+} */
