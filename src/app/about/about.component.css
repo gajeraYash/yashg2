@@ -44,7 +44,8 @@
 .tech-list{
   padding: 0px;
   list-style: none;
-
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 15px;
 }
 
 .tech-list::before{
@@ -53,10 +54,12 @@
   padding-right: 10px;
   color: var(--main-primary-color);
   transition: all 0.3s ease-in-out;
+
 }
 
 ul{
   padding-left: 0px;
+
 }
 .link{
   color: var(--main-other-color);
