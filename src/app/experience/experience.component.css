@@ -92,7 +92,8 @@
   .nav-link {
     border-left: 0;
     border-top: solid 1px var(--main-sub-color);
-    font-size: medium;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .nav-link:hover {
