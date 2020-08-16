@@ -2,14 +2,7 @@
   width: 100%;
   background-color: var(--main-bg-color);
   background-size: cover;
-  padding-top:50px;
-  padding-bottom:150px;
 }
-.section {
-  overflow: hidden;
-  padding-bottom: 100px;
-}
-
 
 #profilePicture{
   width: 80%;
@@ -65,8 +58,8 @@ ul{
   color: var(--main-other-color);
 }
 
-@media (max-width: 768px) {
-  #about{
+/* @media (max-width: 768px) {
+
     padding-bottom: 50px;
   }
-}
+} */
