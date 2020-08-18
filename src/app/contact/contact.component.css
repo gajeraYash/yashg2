@@ -3,3 +3,38 @@
   background-color: var(--main-bg-color);
   background-size: cover;
 }
+.contact-details{
+  padding: 100px;
+  text-align: center;
+}
+
+.contact-heading{
+  font-size: 44px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--main-secondary-color);
+
+}
+
+.contact-desc{
+  font-size: larger;
+  color:var(--main-sub-color);
+}
+.email-button{
+  padding: 50px 0px;
+}
+#send-email {
+  margin: 0px 10px 0 10px;
+  color: var(--main-primary-color);
+  line-height: 1;
+  border-width: 1px;
+  border-style: solid;
+  font-size: larger;
+  border-color: var(--main-primary-color);
+  padding: 1rem 1rem;
+  transition: all 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67) 0s;
+}
+#send-email:hover {
+  background-color: var(--hover-primary-bg-color);
+}

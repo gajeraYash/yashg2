@@ -1,0 +1,15 @@
+#footer{
+  width: 100%;
+  background-color: var(--main-bg-color);
+  background-size: cover;
+  padding-bottom: 25px;
+}
+.footer-info{
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: center;
+}
+
+.footer-info small a{
+  color: var(--main-primary-color);
+  text-decoration: none;
+}
