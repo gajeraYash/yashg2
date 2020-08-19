@@ -2,5 +2,58 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap/dist/css/bootstrap-grid.min.css";
 @import "~boxicons/css/boxicons.min.css";
+@import "~aos/dist/aos.css";
 /* https://colorhunt.co/palette/196240 */
 /* https://colorhunt.co/palette/191933 */
+
+:root {
+  --main-primary-color: #64ffda;
+  --main-secondary-color: #dceff9;
+  --main-sub-color: #828B8F;
+  --main-other-color: #05b2dc;
+  --main-bg-color: #092532;
+
+  --hover-primary-bg-color: #64ffda33; /*20% Opacity*/
+  --shade-bg-color: #030D11;
+  --pop-bg-color: #061A22;
+}
+
+html {
+  background-color: var(--main-bg-color);
+}
+
+html:before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  z-index: -1;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 44px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 50px;
+  color: var(--main-secondary-color);
+}
+
+.profile-sec{
+  padding: 100px 0px;
+
+}
+
+@media (max-width: 768px) {
+  .profile-sec{
+    padding-bottom: 100px;
+  }
+  .section-title h2 {
+    font-size: 38px;
+  }
+}
