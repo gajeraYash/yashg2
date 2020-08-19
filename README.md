@@ -5,8 +5,7 @@
 <div align='center'>
 <img style='padding:0 5px 0 5px' src='https://travis-ci.com/gajeraYash/yashg2.svg?branch=master'> 
 <img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/url-yashgajera.io-blue'>
-<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/status-down-red'>
-<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/release-15AUG-blue'>
+<img style='padding:0 5px 0 5px' src='https://img.shields.io/badge/status-up-green'>
 </div>
   
 ## Info
