@@ -7,8 +7,8 @@
   z-index: 1;
 }
 .logo{
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   margin: 0px;
   padding: 0px;
 }
@@ -38,7 +38,6 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   color: var(--main-primary-color);
 }
 #resume {
-  margin: 0px 10px 0 10px;
   color: var(--main-primary-color);
   line-height: 1;
   border-width: 1px;
