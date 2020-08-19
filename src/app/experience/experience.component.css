@@ -1,0 +1,111 @@
+#experience {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  background-size: cover;
+}
+
+
+.nav {
+  display: inline;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--main-primary-color);
+  background-color: var(--hover-primary-bg-color);
+  border-left: solid 2px var(--main-primary-color);
+}
+
+.nav-link {
+  border-radius: 0;
+  color: var(--main-sub-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-left: solid 1px var(--main-sub-color);
+  font-size: large;
+}
+
+.nav-link:hover {
+  border-radius: 0;
+  color: var(--main-sub-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-left: solid 1px var(--main-primary-color);
+  background-color: var(--hover-primary-bg-color);
+  color: var(--main-secondary-color);
+}
+
+#nav-tabContent {
+  color: var(--main-sub-color);
+
+}
+.job-title{
+  font-size: larger;
+  color: var(--main-secondary-color);
+  margin: 0px;
+}
+.job-date{
+  font-size: large;
+  color: var(--main-sub-color);
+  font-style: italic;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.link{
+  color: var(--main-primary-color);
+}
+.job-desc{
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: medium;
+}
+.list-desc{
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.list-desc::before{
+  font-size: meidum;
+  content: "○";
+  color: var(--main-primary-color);
+  position: absolute;
+  left: 0px;
+}
+
+@media (max-width: 768px) {
+  #tab-menu {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-link {
+    border-left: 0;
+    border-top: solid 1px var(--main-sub-color);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .nav-link:hover {
+    border-left: 0;
+    border-top: solid 1px var(--main-primary-color);
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    border-left: 0;
+    border-top: solid var(--main-primary-color);
+  }
+
+  .nav-item {
+    white-space: nowrap;
+  }
+}

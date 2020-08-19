@@ -1,0 +1,80 @@
+#about {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  background-size: cover;
+}
+
+#profilePicture {
+  width: 80%;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  border-radius: 7%;
+  transition: all ease-in-out .5s;
+}
+
+#profilePicture:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  border-radius: 4%;
+  transition: all ease-in-out .5s;
+  transform: scale(1.05);
+}
+
+/*
+.colorOverlay{
+  position:relative;
+  width:300px;
+  height:300px;
+  border-radius: 2%;
+  background: var(--main-primary-color);
+  opacity:.5;
+  transition: ease-in-out .4s;
+}
+
+.colorOverlay:hover{
+  opacity: 0;
+}
+.profileBox:hover{
+  background-image: url("../../assets/img/profile.jpeg") ;
+  transform: scale(1.05);
+}*/
+
+.textDescription {
+  color: var(--main-sub-color);
+  font-size: large;
+}
+
+.tech-list {
+  padding: 0px;
+  list-style: none;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 15px;
+}
+
+.tech-list::before {
+  content: "○";
+  font-size: 18px;
+  padding-right: 10px;
+  color: var(--main-primary-color);
+  transition: all 0.3s ease-in-out;
+
+}
+
+ul {
+  padding-left: 0px;
+
+}
+
+.link {
+  color: var(--main-other-color);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  #profilePicture {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+  }
+}

@@ -1,0 +1,81 @@
+#projects{
+  width: 100%;
+  background-color: var(--main-bg-color);
+  background-size: cover;
+}
+.box-container{
+  display: grid;
+  position: relative;
+  grid-auto-rows: 1fr;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));;
+}
+
+.box {
+  background-color: var(--pop-bg-color);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(3,13,17,0.6);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(3,13,17,0.6);
+  box-shadow: 0px 0px 7px 0px rgba(3,13,17,0.6);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.box:hover{
+  transform: translate(0px, -5px);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(3,13,17,0.6);
+  -moz-box-shadow: 0px 5px 7px 0px rgba(3,13,17,0.6);
+  box-shadow: 0px 5px 7px 0px rgba(3,13,17,0.6);
+}
+.box-top{
+  padding: 15px 20px 20px 20px;
+}
+.box-title{
+  color: var(--main-secondary-color);
+}
+.box-desc{
+  margin-top: 20px;
+  color: var(--main-sub-color);
+  font-size: medium;
+}
+
+.box-bottom{
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+  display: inline-flex;
+  margin: 0px;
+  color: var(--main-sub-color);
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 15px;
+}
+.box-sub{
+  list-style-type: none;
+  display: inline-flex;
+  padding:0px;
+}
+.box-sub li{
+  margin-right: 5px;
+}
+.box-link {
+  text-align: right;
+  font-size: x-large;
+  color: var(--main-sub-color);
+  padding: 0px;
+}
+
+.social{
+  color: var(--main-sub-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.social:hover{
+  color: var(--main-primary-color);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+/* @media (max-width: 768px) {
+} */
