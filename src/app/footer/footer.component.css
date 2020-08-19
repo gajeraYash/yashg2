@@ -4,6 +4,9 @@
   background-size: cover;
   padding-bottom: 25px;
 }
+.row{
+  margin: 0px;
+}
 .footer-info{
   font-family: "Lucida Console", Monaco, monospace;
   text-align: center;

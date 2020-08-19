@@ -6,6 +6,12 @@
   width: 100%;
   z-index: 1;
 }
+.logo{
+  width: 45px;
+  height: 45px;
+  margin: 0px;
+  padding: 0px;
+}
 .navbar-nav {
   margin-left: auto;
 }
